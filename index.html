@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Invoice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+        }
+        .invoice-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .table-bordered {
+            border: 2px solid #dee2e6;
+        }
+        .table th, .table td {
+            vertical-align: middle;
+            padding: 8px;
+            border: 2px solid #dee2e6;
+        }
+        .company-details, .bank-details {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .text-right {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <!-- Title Section -->
+            <tr>
+                <td colspan="4" class="text-center">
+                    <h2 class="invoice-title">Tax Invoice</h2>
+                    <p>(see Section 31 CGST Act & Rule 1 of invoice rules)</p>
+                </td>
+            </tr>
+
+            <!-- Company Information -->
+            <tr>
+                <td colspan="2">
+                    <img src="PMPL LOGO_Transparent.png" alt="Company Logo" class="logo"> <!-- Replace with actual logo -->
+                </td>
+                <td colspan="2" class="company-details">
+                    <h4>Pacific Mechatronics Private Limited</h4>
+                    <p>
+                        Gat No 750, 751 & 752, Pune-Bangalore Highway, At Post Velu,<br>
+                        Taluka: Bhor, Dist: Pune, Pin Code: 412205 Maharashtra<br>
+                        Tel: 9545081100 / 9637538332<br>
+                        Email: accounts@pacificindia.net<br>
+                        CIN: U29100PN1996PTC099209 | PAN: AABCP2569D | GSTN: 27AABCP2569D1ZI<br>
+                        MSME Registration No: UDYAM-MH-26-0017473
+                    </p>
+                </td>
+            </tr>
+
+            <!-- Invoice Details -->
+            <tr>
+                <th>Invoice No</th>
+                <td></td>
+                <th>Delivery Note No</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Date</th>
+                <td></td>
+                <th>Date</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Place of Supply</th>
+                <td></td>
+                <th>E-Way Bill No</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Reverse Charges</th>
+                <td></td>
+                <th>Mode of Transport</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Supply Order No</th>
+                <td></td>
+                <th>Transporter</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Date</th>
+                <td></td>
+                <th>Payment Terms</th>
+                <td></td>
+            </tr>
+
+            <!-- Billed and Shipped Info -->
+            <tr>
+                <td colspan="2">
+                    <h5>BILLED TO:</h5>
+                    <p>Buyer GSTN/UIN No:</p>
+                </td>
+                <td colspan="2">
+                    <h5>SHIPPED TO:</h5>
+                    <p>Buyer GSTN/UIN No:</p>
+                </td>
+            </tr>
+
+            <!-- Itemized Details -->
+            <tr>
+                <th>SL No</th>
+                <th>Description of articles supplied, or service rendered</th>
+                <th>HSN/SAC Code</th>
+                <th>Total Amount (INR)</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Description of items or services</td>
+                <td>HSN/SAC Code</td>
+                <td>5000</td>
+            </tr>
+            <!-- Add more rows if needed -->
+
+            <!-- Payment and Taxes -->
+            <tr>
+                <td colspan="2"><strong>Amount in words:</strong> Five Thousand Nine Hundred Rupees Only</td>
+                <td class="text-right">Total taxable amount:</td>
+                <td>5000 INR</td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td class="text-right">IGST @:</td>
+                <td>0.00 INR</td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td class="text-right">CGST @:</td>
+                <td>450.00 INR</td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td class="text-right">SGST @:</td>
+                <td>450.00 INR</td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td class="text-right"><strong>Total Amount:</strong></td>
+                <td>5900 INR</td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td class="text-right"><strong>Round-up Amount:</strong></td>
+                <td>5900 INR</td>
+            </tr>
+
+            <!-- Bank Details and Terms -->
+            <tr>
+                <td colspan="2" class="bank-details">
+                    <h5>Payment to be remitted to:</h5>
+                    <p>
+                        Bank Name: Bank of Maharashtra, Baner, Pune<br>
+                        Account No: 60099421813<br>
+                        A/c Type: Current<br>
+                        IFSC Code: MAHB0001438
+                    </p>
+                </td>
+                <td colspan="2" class="terms">
+                    <h5>Terms & Conditions:</h5>
+                    <p>1. Any discrepancy whatsoever out of invoice will lapse unless raised in writing in 7 days.</p>
+                    <p>2. Interest @ 18% p.a. will be charged if the payment is not made within the stipulated time.</p>
+                    <p>3. Subject to ‘Pune’ Jurisdiction only.</p>
+                </td>
+            </tr>
+
+            <!-- Signature -->
+            <tr>
+                <td colspan="4" class="text-center">
+                    <p><strong>For Pacific Mechatronics Private Limited</strong></p>
+                    <p>Authorised Signatory</p>
+                </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+                <td colspan="4" class="text-center company-details">
+                    <p>Registered Office:</p>
+                    <p>
+                        FL C2-904, Meghvarsha, S No 119/2/3, Warje, Pune-411058 Maharashtra (INDIA)<br>
+                        Tel: +91 7499541704, E-mail: sunita@pacificindia.net
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
